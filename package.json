@@ -1,7 +1,7 @@
 {
-  "name": "Magma Wallet",
+  "name": "Magma-Wallet",
   "version": "1.0.0",
-  "description": "Magma Wallet - Криптокошелёк",
+  "description": "Magma-Wallet – Cryptowallet",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
