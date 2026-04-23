@@ -2,96 +2,235 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>PS3 Retro Portal</title>
+    <title>PS3 Portal</title>
 </head>
 <body bgcolor="#000000" text="#FFFFFF" link="#00AAFF" vlink="#0088CC">
 
-    <!-- Главная таблица-контейнер -->
+    <!-- Хедер -->
     <table width="100%" border="0" cellspacing="0" cellpadding="10">
         <tr>
             <td align="center" bgcolor="#1a1a1a">
-                <font size="6" face="Arial, Helvetica, sans-serif"><b>PS3 HOME PORTAL</b></font><br>
-                <font size="2" face="Verdana">Оптимизировано для NetFront Browser</font>
+                <img src="https://img.freepik.com/psd-premium/ilustracao-3d-de-rosto-sorridente-com-olhos-sorridente-icone-emoji-em-fundo-transparente_675042-249.jpg" width="60" height="60" border="0" alt=":)">
+                <br>
+                <font size="6" face="Arial"><b>PS3 PORTAL</b></font><br>
+                <font size="2" face="Verdana">Версия 4.5 | NetFront Compatible</font>
             </td>
         </tr>
     </table>
 
     <br>
 
-    <!-- Поиск (FrogFind - лучший для PS3) -->
-    <table width="90%" border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="#444444">
-        <tr>
-            <td bgcolor="#222222">
-                <font face="Arial" size="3"><b>Поиск (для старых браузеров):</b></font>
-                <form action="http://frogfind.com/" method="get">
-                    <input type="text" name="q" size="30">
-                    <input type="submit" value="Найти через FrogFind">
-                </form>
-            </td>
-        </tr>
-    </table>
+    <!-- Главная страница (Портал) -->
+    <div id="portal-page">
+        <table width="90%" border="1" cellspacing="0" cellpadding="20" align="center" bordercolor="#444444" bgcolor="#111111">
+            <tr>
+                <td align="center">
+                    <font face="Arial" size="4"><b>ИГРОВАЯ ЗОНА</b></font><br><br>
+                    <input type="button" value="  ЗАПУСТИТЬ САПЁРА  " style="height:50px; width:220px; font-weight:bold; cursor:pointer;" onclick="showGame()">
+                </td>
+            </tr>
+        </table>
 
-    <br>
+        <br>
 
-    <!-- Основной контент -->
-    <table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
-        <tr>
-            <!-- Левая колонка: Ссылки -->
-            <td width="50%" valign="top">
-                <table width="100%" border="1" cellspacing="0" cellpadding="8" bordercolor="#444444">
-                    <tr><td bgcolor="#333333"><b><font face="Arial">Рабочие сайты на PS3</font></b></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://gamefaqs.gamespot.com">GameFAQs (База игр)</a></font></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://ps3.brewology.com">Brewology (Все для PS3)</a></font></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://68k.news">Мировые Новости (Текст)</a></font></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://psx-place.com">PSX-Place (Форум сцены)</a></font></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://wttr.in?lang=ru">Погода (Текстовая)</a></font></td></tr>
-                    <tr><td><font face="Arial" size="2">&bull; <a href="http://google.com">Google (Классика)</a></font></td></tr>
-                </table>
-            </td>
+        <table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
+            <tr>
+                <!-- Левая колонка -->
+                <td width="50%" valign="top">
+                    <table width="100%" border="1" cellspacing="0" cellpadding="8" bordercolor="#444444">
+                        <tr><td bgcolor="#004400"><b><font face="Arial">Социальные сети</font></b></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://mbasic.facebook.com">Facebook Basic</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://spacehey.com">SpaceHey (Retro Social)</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://news.ycombinator.com">Hacker News</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://boards.4channel.org/v/">4chan /v/ (Игры)</a></font></td></tr>
+                    </table>
+                </td>
+                <!-- Правая колонка -->
+                <td width="50%" valign="top">
+                    <table width="100%" border="1" cellspacing="0" cellpadding="8" bordercolor="#444444">
+                        <tr><td bgcolor="#444400"><b><font face="Arial">Инструменты</font></b></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://frogfind.com">FrogFind Search</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://duckduckgo.com/lite">DuckDuckGo Lite</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://gamefaqs.gamespot.com">GameFAQs</a></font></td></tr>
+                        <tr><td><font face="Arial" size="2">&bull; <a href="http://wttr.in?lang=ru">Погода (Текст)</a></font></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-            <!-- Правая колонка: Инфо -->
-            <td width="50%" valign="top">
-                <table width="100%" border="1" cellspacing="0" cellpadding="8" bordercolor="#444444">
-                    <tr><td bgcolor="#333333"><b><font face="Arial">Справка</font></b></td></tr>
-                    <tr>
-                        <td height="140" valign="top">
-                            <font face="Arial" size="2">
-                                <b>Рекомендация:</b> Если сайт не грузится, попробуйте отключить JavaScript в настройках браузера PS3.<br><br>
-                                <b>Управление:</b><br>
-                                [L1/R1] - Назад/Вперед<br>
-                                [R3] - Увеличить<br>
-                                [Квадрат] - Список окон
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <!-- Страница игры Сапёр -->
+    <div id="game-page" style="display:none;">
+        <br>
+        <table width="320" border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="#888888" bgcolor="#C0C0C0">
+            <tr>
+                <td align="center">
+                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td align="left"><input type="button" value=" << " onclick="showPortal()"></td>
+                            <td align="center"><font face="Arial" color="#000000" size="2"><b>MINESWEEPER</b></font></td>
+                            <td align="right"><input type="button" value=" R " onclick="initGame()"></td>
+                        </tr>
+                    </table>
+                    <hr color="#888888">
+                    
+                    <!-- Поле игры -->
+                    <div id="game-board" style="background-color:#808080; padding:5px; border:2px inset #FFF;">
+                    </div>
 
-    <br>
+                    <div id="game-status" style="margin-top:10px;">
+                        <font face="Arial" color="#000000" size="2">Мины: 10</font>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    <!-- Нижний блок -->
-    <table width="90%" border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="#444444">
-        <tr>
-            <td align="center" bgcolor="#111111">
-                <font face="Verdana" size="1">
-                    Специальная сборка для NetFront PS3.<br>
-                    Удалены все HTTPS-тяжелые элементы.
-                </font>
-            </td>
-        </tr>
-    </table>
+    <script type="text/javascript">
+        var rows = 8;
+        var cols = 8;
+        var minesCount = 10;
+        var board = [];
+        var gameOver = false;
 
-    <!-- Примитивный скрипт даты -->
+        function showGame() {
+            document.getElementById('portal-page').style.display = 'none';
+            document.getElementById('game-page').style.display = 'block';
+            initGame();
+        }
+
+        function showPortal() {
+            document.getElementById('portal-page').style.display = 'block';
+            document.getElementById('game-page').style.display = 'none';
+        }
+
+        function initGame() {
+            var container = document.getElementById('game-board');
+            container.innerHTML = "";
+            document.getElementById('game-status').innerHTML = "<font face='Arial' color='#000'>Мины: " + minesCount + "</font>";
+            board = [];
+            gameOver = false;
+
+            // Создание сетки
+            for (var y = 0; y < rows; y++) {
+                board[y] = [];
+                var rowDiv = document.createElement('div');
+                rowDiv.style.whiteSpace = "nowrap";
+                for (var x = 0; x < cols; x++) {
+                    board[y][x] = { mine: false, revealed: false, count: 0, x: x, y: y };
+                    var btn = document.createElement('input');
+                    btn.type = "button";
+                    btn.value = " ";
+                    btn.id = "c" + y + "_" + x;
+                    btn.style.width = "30px";
+                    btn.style.height = "30px";
+                    btn.style.margin = "1px";
+                    btn.style.padding = "0px";
+                    btn.style.fontFamily = "Arial";
+                    btn.style.fontSize = "14px";
+                    btn.onclick = (function(ix, iy) { return function() { clickCell(ix, iy); }; })(x, y);
+                    rowDiv.appendChild(btn);
+                }
+                container.appendChild(rowDiv);
+            }
+
+            // Расстановка мин
+            var placed = 0;
+            while (placed < minesCount) {
+                var rx = Math.floor(Math.random() * cols);
+                var ry = Math.floor(Math.random() * rows);
+                if (!board[ry][rx].mine) {
+                    board[ry][rx].mine = true;
+                    placed++;
+                }
+            }
+
+            // Подсчет цифр
+            for (var y = 0; y < rows; y++) {
+                for (var x = 0; x < cols; x++) {
+                    if (!board[y][x].mine) {
+                        var c = 0;
+                        for (var dy = -1; dy <= 1; dy++) {
+                            for (var dx = -1; dx <= 1; dx++) {
+                                if (board[y + dy] && board[y + dy][x + dx] && board[y + dy][x + dx].mine) c++;
+                            }
+                        }
+                        board[y][x].count = c;
+                    }
+                }
+            }
+        }
+
+        function clickCell(x, y) {
+            if (gameOver || board[y][x].revealed) return;
+            var cell = board[y][x];
+            var btn = document.getElementById("c" + y + "_" + x);
+            cell.revealed = true;
+
+            if (cell.mine) {
+                btn.value = "X";
+                btn.style.backgroundColor = "#FF0000";
+                btn.style.color = "#FFFFFF";
+                document.getElementById('game-status').innerHTML = "<font color='red'><b>ПРОИГРЫШ!</b></font>";
+                gameOver = true;
+                revealAll();
+            } else {
+                renderCell(x, y);
+                if (cell.count == 0) {
+                    // Flood fill (раскрытие пустоты)
+                    for (var dy = -1; dy <= 1; dy++) {
+                        for (var dx = -1; dx <= 1; dx++) {
+                            if (board[y + dy] && board[y + dy][x + dx]) clickCell(x + dx, y + dy);
+                        }
+                    }
+                }
+                checkWin();
+            }
+        }
+
+        function renderCell(x, y) {
+            var cell = board[y][x];
+            var btn = document.getElementById("c" + y + "_" + x);
+            btn.style.backgroundColor = "#E0E0E0";
+            btn.style.border = "1px solid #777";
+            if (cell.count > 0) {
+                var colors = ["", "blue", "green", "red", "darkblue", "maroon", "teal", "black", "gray"];
+                btn.value = cell.count;
+                btn.style.color = colors[cell.count];
+                btn.style.fontWeight = "bold";
+            } else {
+                btn.value = "";
+            }
+        }
+
+        function checkWin() {
+            var rev = 0;
+            for (var y = 0; y < rows; y++) {
+                for (var x = 0; x < cols; x++) {
+                    if (board[y][x].revealed) rev++;
+                }
+            }
+            if (rev == (rows * cols - minesCount)) {
+                document.getElementById('game-status').innerHTML = "<font color='green'><b>ПОБЕДА!</b></font>";
+                gameOver = true;
+            }
+        }
+
+        function revealAll() {
+            for (var y = 0; y < rows; y++) {
+                for (var x = 0; x < cols; x++) {
+                    if (board[y][x].mine) {
+                        var b = document.getElementById("c" + y + "_" + x);
+                        b.value = "X";
+                        b.style.backgroundColor = "#FFAAAA";
+                    }
+                }
+            }
+        }
+    </script>
+
     <div align="center">
-        <script type="text/javascript">
-            var d = new Date();
-            var day = d.getDate();
-            var month = d.getMonth() + 1;
-            var year = d.getFullYear();
-            document.write('<font face="Arial" size="2" color="#AAAAAA"><br>Дата: ' + day + '.' + month + '.' + year + '</font>');
-        </script>
+        <font face="Arial" size="1" color="#555555"><br>PS3 Browser Optimized v4.5</font>
     </div>
 
 </body>
